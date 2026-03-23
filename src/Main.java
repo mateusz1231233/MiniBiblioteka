@@ -10,5 +10,10 @@ public class Main {
         ksiazka1.wypozycz();
         ksiazka1.zwroc();
         ksiazka1.wypiszInfo();
-    }
+
+    System.out.println("--- Test Zadania 2 ---");
+    Czytelnik c1 = new Czytelnik("Jan", "Kowalski", "K-100");
+        c1.wypiszDane();
+        c1.dodajWypozyczenie();
+        c1.wypiszDane(); }
 }
