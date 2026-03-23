@@ -18,5 +18,15 @@ public class Biblioteka {
         for (int i = 0; i < aktualnaLiczbaKsiazek; i++) {
             ksiazki[i].wypiszInfo();
         }
+            }
+    public void wypozyczKsiazke(Ksiazka ksiazka, Czytelnik czytelnik) {
+        if (ksiazka.isDostepna()) {
+            ksiazka.wypozycz();
+            czytelnik.dodajWypozyczenie();
+            System.out.println("Sukces! Wypozyczono ksiazke uzytkownikowi.");
+        } else {
+            System.out.println("Niestety, ksiazka jest juz zajeta.");
+        }
     }
-}
+        }
+

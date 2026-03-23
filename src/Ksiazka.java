@@ -25,5 +25,8 @@ public class Ksiazka {
         dostepna = true;
         System.out.println("Zwrócono: " + tytul);
     }
+    public boolean isDostepna() {
+        return dostepna;
+    }
 }
 

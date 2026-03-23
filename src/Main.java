@@ -23,5 +23,9 @@ public class Main {
         biblioteka.dodajKsiazke(ksiazka2);
         biblioteka.dodajKsiazke(ksiazka3);
         biblioteka.wyswietlWszystkie();
+        System.out.println("\n--- TEST ZADANIA 4 (Finał) ---");
+        biblioteka.wypozyczKsiazke(ksiazka2, c1);
+        c1.wypiszDane();
+        ksiazka2.wypiszInfo();
     }
 }
