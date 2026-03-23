@@ -15,5 +15,13 @@ public class Main {
     Czytelnik c1 = new Czytelnik("Jan", "Kowalski", "K-100");
         c1.wypiszDane();
         c1.dodajWypozyczenie();
-        c1.wypiszDane(); }
+        c1.wypiszDane();
+
+        System.out.println("\n--- TEST ZADANIA 3 ---");
+        Biblioteka biblioteka = new Biblioteka(10);
+        biblioteka.dodajKsiazke(ksiazka1);
+        biblioteka.dodajKsiazke(ksiazka2);
+        biblioteka.dodajKsiazke(ksiazka3);
+        biblioteka.wyswietlWszystkie();
+    }
 }
